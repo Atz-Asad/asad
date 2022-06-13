@@ -1,0 +1,96 @@
+@media all and (max-width:1200px){
+    .container{
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+}
+@media all and (max-width:991px){
+    .header-left-area {
+        height: 100vh;
+        width: 300px;
+        z-index: 1;
+        position: absolute;
+        left: -310px;
+        top: 23px;
+        transition: .5s;
+    } 
+    .header-left-area.open {
+        left: 0;
+        background: #131010;
+        z-index: 12;
+        top: 0;
+    }
+    .menu-close,
+    .menu-open{
+        display: block;
+    }
+    .menu-close a ,
+    .menu-open a {
+        font-size: 25px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        background: #ffff10;
+        color: #000;
+        padding: 2px 11px;
+        display: inline-block;
+        border-radius: 5px;
+        z-index: 8;
+    }
+    .close {
+        left: -400px;
+    }
+    .skill-main-area > .container,
+    .portfolio-main-area > .container,
+    .work-main-area > .container,
+    .service-area > .container,
+    .contect-area > .container,
+    .about-area > .container,
+    .banner-main-area > .container{
+        max-width: 100%;
+    }
+    /* about=area */
+    #myCanvas {
+        max-width: 400px;
+        height: 400px;
+    }
+    /* portfolio */
+    .portfolio-controler {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (max-width:768px){
+    .banner-main-area {
+        padding-top: 10rem;
+        height: none;
+        height: inherit;
+    }
+    .banner-image {
+        max-width: 400px;
+        height: auto;
+        margin: auto;
+    }
+    .right-about {
+        text-align: center;
+    }
+     /* portfolio */
+     .portfolio-controler {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media all and (max-width:575px){
+    #myCanvas {
+        max-width: 350px;
+        height: 350px;
+    }
+}
+@media all and (max-width:480px){
+    .banner-left h3, .banner-left h2 {
+        font-size: 5rem;
+    }
+    .banner-left h3 {
+        font-size: 3.5rem;
+    }
+    
+}
